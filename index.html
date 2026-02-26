@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kayla’s Signature Touch | Mobile Massage Therapy</title>
+
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+margin: 0;
+background: #f8f8f6;
+color: #333;
+}
+
+header {
+background: linear-gradient(135deg, #2f855a, #4caf7a);
+color: white;
+text-align: center;
+padding: 40px 20px;
+position: relative;
+}
+
+header h1 { margin: 0; font-size: 2.5rem; }
+header p { margin-top: 10px; font-size: 1.1rem; }
+
+.admin-icon {
+position: absolute;
+top: 15px;
+right: 15px;
+font-size: 1.5rem;
+cursor: pointer;
+user-select: none;
+}
+
+.container {
+max-width: 1000px;
+margin: auto;
+padding: 20px;
+}
+
+.hero {
+text-align: center;
+padding: 70px 20px;
+background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url('https://images.unsplash.com/photo-1556228453-efd6c1ff04f6') center/cover no-repeat;
+color: white;
+border-radius: 12px;
+margin: 30px 0;
+}
+
+.hero h2 { font-size: 2rem; margin-bottom: 15px; }
+.hero p { font-size: 1.2rem; margin-bottom: 25px; }
+
+h2 {
+margin-top: 50px;
+border-bottom: 2px solid #4caf7a;
+padding-bottom: 10px;
+color: #2f855a;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+th, td { padding: 15px; text-align: center; }
+th { background: #e6f4ec; }
+tr:nth-child(even) { background: #fafafa; }
+
+.btn {
+display: inline-block;
+background: #4caf7a;
+color: white;
+padding: 12px 30px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: bold;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn:hover { background: #2f855a; transform: translateY(-2px); }
+
+ul { line-height: 1.8; }
+
+form {
+background: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+margin-top: 20px;
+}
+
+form input, form select, form textarea {
+width: 100%;
+padding: 12px;
+margin: 10px 0 20px 0;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+outline: none;
+border-color: #4caf7a;
+box-shadow: 0 0 6px rgba(76,175,122,0.3);
+}
+
+.policy {
+background: #eaf7ef;
+padding: 20px;
+border-left: 4px solid #4caf7a;
+border-radius: 8px;
+margin-top: 25px;
+}
+
+.admin-panel {
+background: #fff6e5;
+padding: 20px;
+border-radius: 10px;
+margin-top: 50px;
+display: none;
+}
+
+footer {
+text-align: center;
+padding: 40px 20px;
+color: #777;
+font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+header h1 { font-size: 1.8rem; }
+.hero h2 { font-size: 1.5rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Kayla’s Signature Touch</h1>
+<p>Mobile Massage Therapy — Relax. Refresh. Rejuvenate.</p>
+<span class="admin-icon" title="Admin Panel">&#128274;</span>
+</header>
+
+<div class="container">
+
+<section class="hero">
+<h2>Luxury Massage Therapy In The Comfort of Your Home</h2>
+<p>Professional • Relaxing • Personalized Care</p>
+<a href="#bookingForm" class="btn">Book Your Session</a>
+</section>
+
+<section>
+<h2>Massage Pricing</h2>
+<table>
+<tr><th>Session</th><th>Regular / Signature</th></tr>
+<tr><td>1 Hour Massage</td><td>$80 / $100</td></tr>
+<tr><td>90 Minute Massage</td><td>$120 / $140</td></tr>
+<tr><td>2 Hour Massage</td><td>$160 / $180</td></tr>
+</table>
+
+<h3>Other Services</h3>
+<table>
+<tr><td>BJ</td><td>$25</td></tr>
+<tr><td>SIP 1hr</td><td>$50</td></tr>
+<tr><td>SIA 1hr</td><td>$70</td></tr>
+<tr><td>SIP&A 1hr</td><td>$75</td></tr>
+<tr><td>Massage Fant. Overnight</td><td>$500</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Why Choose Kayla’s Signature Touch?</h2>
+<ul>
+<li>✔ Professional and respectful service</li>
+<li>✔ Clean and sanitized equipment</li>
+<li>✔ Relaxing in-home experience</li>
+<li>✔ Personalized massage sessions</li>
+</ul>
+</section>
+
+<section>
+<h2>Book Your Session</h2>
+
+<form id="bookingForm">
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Address (For Travel)" required>
+
+<select id="duration" required>
+<option value="">Select Session Duration</option>
+<option>1 Hour</option>
+<option>90 Minutes</option>
+<option>2 Hours</option>
+</select>
+
+<select id="sessionType" required>
+<option value="">Select Session Type</option>
+<option>Regular</option>
+<option>Signature</option>
+</select>
+
+<p>Select Additional Services:</p>
+<label><input type="checkbox" value="BJ $25"> BJ $25</label><br>
+<label><input type="checkbox" value="SIP 1hr $50"> SIP 1hr $50</label><br>
+<label><input type="checkbox" value="SIA 1hr $70"> SIA 1hr $70</label><br>
+<label><input type="checkbox" value="SIP&A 1hr $75"> SIP&A 1hr $75</label><br>
+<label><input type="checkbox" value="Massage Fant. Overnight $500"> Massage Fant. Overnight $500</label><br>
+
+<textarea rows="4" placeholder="Health Information (Injuries, allergies, medical conditions)"></textarea>
+
+<input type="datetime-local" required>
+
+<button type="submit" class="btn">Save Booking</button>
+</form>
+
+<p style="text-align:center; margin-top:20px;">
+Or book directly via WhatsApp:<br><br>
+<a href="https://wa.me/12262663626" class="btn">Chat on WhatsApp</a>
+</p>
+
+<div class="policy">
+<strong>Travel Policy:</strong><br>
+I travel to your location for your convenience. A transportation fee may apply depending on distance and location. This will be confirmed before your appointment.<br><br>
+<strong>Booking Policy:</strong><br>
+To confirm your session, an upfront payment is required. Your appointment is secured once payment is received.
+</div>
+</section>
+
+<section class="admin-panel" id="adminPanel">
+<h2>Admin Area – Session Requests</h2>
+<ul id="adminList"></ul>
+</section>
+
+</div>
+
+<footer>
+© 2026 Kayla’s Signature Touch — All Rights Reserved
+</footer>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script>
+// 🔹 Your Firebase config
+const firebaseConfig = {
+apiKey: "AIzaSyAn2FZJ0_BdWXY_fSSqNtcsgPpOpFIugPQ",
+authDomain: "mymassagesite-6d0c3.firebaseapp.com",
+projectId: "mymassagesite-6d0c3",
+storageBucket: "mymassagesite-6d0c3.firebasestorage.app",
+messagingSenderId: "996629643297",
+appId: "1:996629643297:web:1feee29dcf974c94fd6360"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+// Admin icon click → password prompt
+const adminIcon = document.querySelector('.admin-icon');
+adminIcon.addEventListener('click', () => {
+const password = prompt("Enter Admin Password:");
+if(password === "Melly003") {
+document.getElementById('adminPanel').style.display = 'block';
+displayBookings();
+} else {
+alert("Incorrect password");
+}
+});
+
+// Booking form logic
+const form = document.getElementById("bookingForm");
+const adminList = document.getElementById("adminList");
+
+form.addEventListener("submit", async function(e){
+e.preventDefault();
+
+const extraServices = [];
+const checkboxes = form.querySelectorAll('input[type="checkbox"]:checked');
+checkboxes.forEach(cb => extraServices.push(cb.value));
+
+const bookingData = {
+name: form.elements[0].value,
+phone: form.elements[1].value,
+email: form.elements[2].value,
+address: form.elements[3].value,
+duration: document.getElementById('duration').value,
+sessionType: document.getElementById('sessionType').value,
+extraServices: extraServices,
+health: form.elements[9].value,
+datetime: form.elements[10].value,
+timestamp: firebase.firestore.FieldValue.serverTimestamp()
+};
+
+try {
+await db.collection("bookings").add(bookingData);
+form.reset();
+alert("Booking saved!");
+} catch(err) {
+console.error(err);
+alert("Error saving booking.");
+}
+});
+
+// Display bookings in admin
+async function displayBookings() {
+adminList.innerHTML = "";
+try {
+const snapshot = await db.collection("bookings").orderBy("timestamp", "desc").get();
+snapshot.forEach((doc) => {
+const booking = doc.data();
+const li = document.createElement("li");
+li.innerHTML = `
+<strong>${booking.name}</strong> - ${booking.duration} (${booking.sessionType})<br>
+Extra Services: ${booking.extraServices.join(', ') || 'None'}<br>
+${booking.datetime} <br>
+Phone: ${booking.phone} | Email: ${booking.email}<br>
+Address: ${booking.address}<br>
+Health Info: ${booking.health || 'None'}<br>
+<button onclick="confirmBooking('${doc.id}')">Confirm</button>
+<hr>
+`;
+adminList.appendChild(li);
+});
+} catch(err){
+console.error(err);
+}
+}
+
+function confirmBooking(id){
+alert("Session Confirmed!");
+}
+</script>
+
+</body>
+</html>
